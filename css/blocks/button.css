@@ -8,4 +8,20 @@
   color: #AD8361;
   border: solid 1px #AD8361;
   border-radius: 60px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover,
+.button:focus-visible {
+  background-color: #AD8361;
+  color: #fff;
+  outline: none;
+}
+
+.button:disabled {
+  border-color: rgba(173, 131, 97, 0.5);
+  color: rgba(173, 131, 97, 0.5);
+  background-color: rgba(243, 243, 243, 0.5);
+  cursor: not-allowed;
 }

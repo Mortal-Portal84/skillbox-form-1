@@ -4,19 +4,6 @@
   gap: 24px;
 }
 
-.form-filter .form-filter__radio-list {
-  display: flex;
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  list-style: none;
-  border: solid 1px #AD8361;
-}
-
-.form-filter .form-filter__radio-list li:not(:last-child) {
-  border-right: solid 1px #AD8361;
-}
-
 .form-filter__header {
   display: flex;
   justify-content: space-between;
@@ -56,23 +43,16 @@
   line-height: 14px;
 }
 
-.form-filter__house-list {
+.form-filter__radio-list {
   display: flex;
-  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  list-style: none;
 }
 
-.form-filter__house-types {
-  position: relative;
-}
-
-.form-filter__house-type {
-  flex: 1 0 50%;
-  border-right: none !important;
-}
-
-.form-filter__house-type:nth-child(3) {
-  flex-basis: 100%;
-  border-top: solid 1px #AD8361;
+.form-filter__radio-list li:last-child label {
+  border-right: solid 1px #AD8361;
 }
 
 .form-filter__checkbox-list {
@@ -82,6 +62,31 @@
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+.form-filter__house-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-filter__house-list .form-filter__house-type:last-child label {
+  border-top: none;
+}
+
+.form-filter__house-list .form-filter__house-type:nth-child(2) label {
+  border-right: 1px solid #AD8361;
+}
+
+.form-filter__house-types {
+  position: relative;
+}
+
+.form-filter__house-type {
+  flex: 1 0 50%;
+}
+
+.form-filter__house-type:nth-child(3) {
+  flex-basis: 100%;
 }
 
 .form-filter__checkbox-list li {

@@ -72,20 +72,20 @@
         <fieldset class="form-filter__currency">
           <legend class="form-filter__legend">Валюта</legend>
 
-          <ul class="form-filter__radio-list form-filter__currency-list">
+          <ul class="form-filter__radio-list">
             <li class="custom-radio form-filter__currency-radio">
-              <input type="radio" id="ruble" name="currency" value="ruble" checked>
-              <label for="ruble">₽</label>
+              <input class="visually-hidden" type="radio" id="ruble" name="currency" value="ruble" checked>
+              <label class="custom-radio__label" for="ruble">₽</label>
             </li>
 
             <li class="custom-radio form-filter__currency-radio">
-              <input type="radio" id="dollar" name="currency" value="dollar">
-              <label for="dollar">$</label>
+              <input class="visually-hidden" type="radio" id="dollar" name="currency" value="dollar">
+              <label class="custom-radio__label" for="dollar">$</label>
             </li>
 
             <li class="custom-radio form-filter__currency-radio">
-              <input type="radio" id="euro" name="currency" value="euro">
-              <label for="euro">&euro;</label>
+              <input class="visually-hidden" type="radio" id="euro" name="currency" value="euro">
+              <label class="custom-radio__label" for="euro">&euro;</label>
             </li>
           </ul>
         </fieldset>
@@ -120,28 +120,28 @@
 
           <ul class="form-filter__radio-list">
             <li class="custom-radio">
-              <input type="radio" id="one-room" name="rooms" value="one-room">
-              <label for="one-room">1</label>
+              <input disabled class="visually-hidden" type="radio" id="one-room" name="rooms" value="one-room">
+              <label class="custom-radio__label" for="one-room">1</label>
             </li>
 
             <li class="custom-radio">
-              <input type="radio" id="two-room" name="rooms" value="two-room">
-              <label for="two-room">2</label>
+              <input class="visually-hidden" type="radio" id="two-room" name="rooms" value="two-room">
+              <label class="custom-radio__label" for="two-room">2</label>
             </li>
 
             <li class="custom-radio">
-              <input type="radio" id="three-room" name="rooms" value="three-room" checked>
-              <label for="three-room">3</label>
+              <input  disabled  class="visually-hidden" type="radio" id="three-room" name="rooms" value="three-room" checked>
+              <label class="custom-radio__label" for="three-room">3</label>
             </li>
 
             <li class="custom-radio">
-              <input type="radio" id="four-room" name="rooms" value="four-room">
-              <label for="four-room">4</label>
+              <input class="visually-hidden" type="radio" id="four-room" name="rooms" value="four-room">
+              <label class="custom-radio__label" for="four-room">4</label>
             </li>
 
             <li class="custom-radio">
-              <input type="radio" id="five-room" name="rooms" value="five-room">
-              <label for="five-room">5</label>
+              <input  disabled  class="visually-hidden" type="radio" id="five-room" name="rooms" value="five-room">
+              <label class="custom-radio__label" for="five-room">5</label>
             </li>
           </ul>
         </fieldset>
@@ -151,18 +151,18 @@
 
           <ul class="form-filter__radio-list form-filter__house-list">
             <li class="custom-radio form-filter__house-type">
-              <input type="radio" id="apartment" name="house-type" value="apartment" checked>
-              <label for="apartment">Квартира</label>
+              <input class="visually-hidden" type="radio" id="apartment" name="house-type" value="apartment" checked>
+              <label class="custom-radio__label" for="apartment">Квартира</label>
             </li>
 
             <li class="custom-radio form-filter__house-type">
-              <input type="radio" id="penthouse" name="house-type" value="penthouse">
-              <label for="penthouse">Пентхаус</label>
+              <input class="visually-hidden" type="radio" id="penthouse" name="house-type" value="penthouse">
+              <label class="custom-radio__label" for="penthouse">Пентхаус</label>
             </li>
 
-            <li class="custom-radio form-filter__house-type">
-              <input type="radio" id="villa" name="house-type" value="villa">
-              <label for="villa">Вилла</label>
+            <li class="custom-radio form-filter__house-type form-filter__house-type--long">
+              <input class="visually-hidden" type="radio" id="villa" name="house-type" value="villa">
+              <label class="custom-radio__label" for="villa">Вилла</label>
             </li>
           </ul>
 
@@ -178,23 +178,24 @@
 
           <ul class="form-filter__radio-list">
             <li class="custom-radio">
-              <input type="radio" id="small-size" name="house-size" value="small-size">
-              <label for="small-size">S</label>
+              <input class="visually-hidden" type="radio" id="small-size" name="house-size" value="small-size">
+              <label class="custom-radio__label" for="small-size">S</label>
             </li>
 
             <li class="custom-radio">
-              <input type="radio" id="medium-size" name="house-size" value="medium-size" checked>
-              <label for="medium-size">M</label>
+              <input class="visually-hidden" type="radio" id="medium-size" name="house-size" value="medium-size"
+                     checked>
+              <label class="custom-radio__label" for="medium-size">M</label>
             </li>
 
             <li class="custom-radio">
-              <input type="radio" id="large-size" name="house-size" value="large-size">
-              <label for="large-size">L</label>
+              <input class="visually-hidden" type="radio" id="large-size" name="house-size" value="large-size">
+              <label class="custom-radio__label" for="large-size">L</label>
             </li>
 
             <li class="custom-radio">
-              <input type="radio" id="extra-size" name="house-size" value="extra-size">
-              <label for="extra-size">XL</label>
+              <input class="visually-hidden" type="radio" id="extra-size" name="house-size" value="extra-size">
+              <label class="custom-radio__label" for="extra-size">XL</label>
             </li>
           </ul>
         </fieldset>
@@ -204,23 +205,23 @@
 
           <ul class="form-filter__radio-list">
             <li class="custom-radio">
-              <input type="radio" id="first-floor" name="house-size" value="first-floor">
-              <label for="first-floor">1</label>
+              <input class="visually-hidden" type="radio" id="first-floor" name="house-floor" value="first-floor">
+              <label class="custom-radio__label" for="first-floor">1</label>
             </li>
 
             <li class="custom-radio">
-              <input type="radio" id="second-floor" name="house-size" value="second-floor">
-              <label for="second-floor">2</label>
+              <input class="visually-hidden" type="radio" id="second-floor" name="house-floor" value="second-floor">
+              <label class="custom-radio__label" for="second-floor">2</label>
             </li>
 
             <li class="custom-radio">
-              <input type="radio" id="third-floor" name="house-size" value="third-floor">
-              <label for="third-floor">3</label>
+              <input class="visually-hidden" type="radio" id="third-floor" name="house-floor" value="third-floor">
+              <label class="custom-radio__label" for="third-floor">3</label>
             </li>
 
             <li class="custom-radio">
-              <input type="radio" id="four-floor" name="house-size" value="four-floor">
-              <label for="four-floor">4</label>
+              <input class="visually-hidden" type="radio" id="four-floor" name="house-floor" value="four-floor">
+              <label class="custom-radio__label" for="four-floor">4</label>
             </li>
           </ul>
         </fieldset>
