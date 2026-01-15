@@ -3,6 +3,44 @@
 	background-color: #FFFFFF;
 }
 
+.catalog-card:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(117, 114, 110, 0.2);
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+.catalog-card:hover:before {
+	opacity: 1;
+}
+
+.catalog-card::after {
+	content: "";
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	width: 60px;
+	height: 60px;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	background-color: #AC8361;
+	background-image: url("../../images/card-plus-icon.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 24px 24px;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+.catalog-card:hover:after {
+	opacity: 1;
+}
+
 .catalog-card__top {
 	row-gap: 48px;
 	display: flex;

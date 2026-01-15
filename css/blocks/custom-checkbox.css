@@ -11,6 +11,7 @@
   user-select: none;
   cursor: pointer;
   color: #000000;
+  transition: color 0.3s ease;
 }
 
 .custom-checkbox__label::before {
@@ -38,4 +39,20 @@
   font-size: 12px;
   line-height: 14px;
   letter-spacing: -0.04em;
+}
+
+.custom-checkbox__label:hover {
+  color: #AD8361;
+}
+
+.custom-checkbox__field:focus-visible + .custom-checkbox__label {
+  color: #AD8361;
+}
+
+.custom-checkbox__field:disabled + .custom-checkbox__label {
+  color: rgba(9, 9, 9, 0.5);
+}
+
+.custom-checkbox__field:disabled + .custom-checkbox__label::before {
+  border-color: rgba(173, 131, 97, 0.5);
 }

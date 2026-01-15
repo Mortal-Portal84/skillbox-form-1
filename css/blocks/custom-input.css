@@ -7,6 +7,7 @@
   position: absolute;
   right: 0;
   bottom: 5px;
+  color: #AD8361;
 }
 
 .custom-input__label {
@@ -23,6 +24,7 @@
   border: none;
   border-bottom: solid 1px rgba(9, 9, 9, 0.15);
   background-color: transparent;
+  transition: border-color 0.3s ease;
 }
 
 .custom-input__field::placeholder {
@@ -31,4 +33,28 @@
   font-size: 12px;
   line-height: 14px;
   letter-spacing: -0.04em;
+}
+
+.custom-input__field:hover {
+  border-color: #AD8361;
+}
+
+.custom-input__field:focus-visible {
+  border-color: #AD8361;
+}
+
+.custom-input__field:focus {
+  outline: none;
+}
+
+.custom-input__field:disabled {
+  border-color: rgba(9, 9, 9, 0.1);
+}
+
+.custom-input__field:disabled .custom-input__field::placeholder {
+  color: rgba(9, 9, 9, 0.3)
+}
+
+.custom-input__field:disabled ~ .custom-input__icon {
+  color: rgba(173, 131, 97, 0.5)
 }
