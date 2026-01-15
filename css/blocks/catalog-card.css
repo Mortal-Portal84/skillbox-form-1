@@ -32,9 +32,10 @@
 	background-image: url("../../images/card-plus-icon.svg");
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: 24px 24px;
+	background-size: 16px 16px;
 	opacity: 0;
 	transition: opacity 0.3s ease;
+	cursor: pointer;
 }
 
 .catalog-card:hover:after {
@@ -150,4 +151,13 @@
   border: none;
   border-radius: 0;
 	cursor: pointer;
+}
+
+.catalog-card__btn-like:hover .catalog-card__like-icon,
+.catalog-card__btn-like:focus-visible .catalog-card__like-icon {
+	color: #EFEDE7;
+}
+
+.catalog-card__btn-like:active .catalog-card__like-icon{
+	color: #AC8361;
 }
