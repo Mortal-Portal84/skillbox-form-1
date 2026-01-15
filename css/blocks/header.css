@@ -75,6 +75,7 @@
 
 .header__settings-link {
   position: relative;
+  letter-spacing: 0;
 }
 
 .header__settings-count {
