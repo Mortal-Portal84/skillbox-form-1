@@ -1,17 +1,5 @@
-.custom-radio__list {
-  display: flex;
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  list-style: none;
-  border: solid 1px #AD8361;
-}
-
-.custom-radio__list .custom-radio:not(:last-child) {
-  border-right: solid 1px #AD8361;
-}
-
 .custom-radio {
+  position: relative;
   flex-wrap: nowrap;
   flex: 1;
 }

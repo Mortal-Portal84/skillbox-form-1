@@ -1,5 +1,20 @@
 .form-filter {
-  padding: 23px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form-filter .form-filter__radio-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  list-style: none;
+  border: solid 1px #AD8361;
+}
+
+.form-filter .form-filter__radio-list li:not(:last-child) {
+  border-right: solid 1px #AD8361;
 }
 
 .form-filter__header {
@@ -13,7 +28,7 @@
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
-  }
+}
 
 .form-filter__reset-button {
   display: flex;
@@ -31,7 +46,6 @@
 .form-filter__currency {
   display: flex;
   padding: 0;
-  margin: 0 0 24px 0;
   border: none;
   background-color: transparent;
 }
@@ -43,10 +57,42 @@
   line-height: 14px;
 }
 
-.form-filter__blocked {
-  margin-bottom: 24px;
+.form-filter__house-list {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.form-filter__search {
-  margin-bottom: 24px;
+.form-filter__house-types {
+  position: relative;
+}
+
+.form-filter__house-type {
+  flex: 1 0 50%;
+  border-right: none !important;
+}
+
+.form-filter__house-type:nth-child(3) {
+  flex-basis: 100%;
+  border-top: solid 1px #AD8361;
+}
+
+.form-filter__checkbox-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 16px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.form-filter__checkbox-list li {
+  width: fit-content;
+}
+
+.form-filter__advantages-list {
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.form-filter__balconies-list {
+  grid-template-rows: repeat(2, 1fr);
 }

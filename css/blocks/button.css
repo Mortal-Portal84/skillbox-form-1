@@ -1,0 +1,11 @@
+.button {
+  padding: 12px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: -0.04em;
+  background-color: transparent;
+  color: #AD8361;
+  border: solid 1px #AD8361;
+  border-radius: 60px;
+}

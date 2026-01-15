@@ -1,15 +1,15 @@
-.custom-search {
+.custom-input {
   position: relative;
   width: 100%;
 }
 
-.custom-search__icon {
+.custom-input__icon {
   position: absolute;
   right: 0;
   bottom: 5px;
 }
 
-.custom-search__label {
+.custom-input__label {
   display: block;
   margin-bottom: 16px;
   font-weight: 300;
@@ -17,7 +17,7 @@
   line-height: 14px;
 }
 
-.custom-search__field {
+.custom-input__field {
   width: 100%;
   padding: 4px 40px 4px 0;
   border: none;
@@ -25,7 +25,7 @@
   background-color: transparent;
 }
 
-.custom-search__field::placeholder {
+.custom-input__field::placeholder {
   font-family: inherit;
   font-weight: 400;
   font-size: 12px;
