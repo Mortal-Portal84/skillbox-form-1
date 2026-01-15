@@ -1,0 +1,52 @@
+.form-filter {
+  padding: 23px 0 0 0;
+}
+
+.form-filter__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.form-filter__paginator {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  }
+
+.form-filter__reset-button {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.form-filter__currency {
+  display: flex;
+  padding: 0;
+  margin: 0 0 24px 0;
+  border: none;
+  background-color: transparent;
+}
+
+.form-filter__legend {
+  margin: 0 0 16px 0;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.form-filter__blocked {
+  margin-bottom: 24px;
+}
+
+.form-filter__search {
+  margin-bottom: 24px;
+}

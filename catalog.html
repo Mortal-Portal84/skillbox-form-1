@@ -54,304 +54,393 @@
     </div>
   </div>
 </header>
+
 <main>
-  <!-- Я уже тут подготовил структуру страницы с прошлого проекта, тебе осталось ее только застилизовать -->
-  <section class="catalog">
-    <div class="container">
-      <h1 class="visually-hidden">Подбор квартиры по параметрам</h1>
-      <div class="catalog__inner">
-        <!-- Форма фильтрации -->
+  <div class="container">
+    <div class="content">
+      <form class="form-filter">
+        <div class="form-filter__header">
+          <span class="form-filter__paginator">Показано 6&nbsp;из&nbsp;9</span>
 
-        <!-- Список с карточками -->
-        <ul class="catalog-list">
-          <li class="catalog-list__item">
-            <div class="catalog-card">
-              <a class="catalog-card__inner" href="#" aria-label="Переход на страницу квартиры">
-                <div class="catalog-card__top">
-                  <p class="catalog-card__title">Квартира №18</p>
-                  <img class="catalog-card__pic" src="images/plan-18.jpg" width="220" height="205"
-                       alt="Планировка квартиры №18">
-                  <ul class="catalog-card__parameters">
-                    <li class="catalog-card__parameters-item">
-                      <div class="parameter-card parameter-card--green">
-                        <p class="parameter-card__title">Кол-во спален</p>
-                        <span class="parameter-card__value">1</span>
-                      </div>
-                    </li>
-                    <li class="catalog-card__parameters-item">
-                      <div class="parameter-card">
-                        <p class="parameter-card__title">Размер</p>
-                        <span class="parameter-card__value">S</span>
-                      </div>
-                    </li>
-                    <li class="catalog-card__parameters-item">
-                      <div class="parameter-card">
-                        <p class="parameter-card__title">Этаж</p>
-                        <span class="parameter-card__value">1</span>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-                <div class="catalog-card__footer">
-                  <div class="catalog-card__area">
-                    <p class="catalog-card__subtitle">Площадь</p>
-                    <p class="catalog-card__area-value"><span class="catalog-card__area-count">77</span> кв. м</p>
-                  </div>
-                  <div class="catalog-card__price-block">
-                    <p class="catalog-card__price">3 087 000 ₽/кв. м</p>
-                    <p class="catalog-card__price-total">236 480 000 ₽</p>
-                  </div>
-                </div>
-              </a>
-              <button class="catalog-card__btn-like" type="button" aria-label="Добавить в избранное">
-                <svg class="catalog-card__like-icon" width="24" height="22" aria-hidden="true">
-                  <use xlink:href="images/sprite.svg#icon-like"></use>
-                </svg>
-              </button>
-            </div>
-          </li>
+          <button class="form-filter__reset-button" type="reset">СБРОСИТЬ
+            <svg class="header__burger-icon" width="13" height="13" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#form-reset"></use>
+            </svg>
+          </button>
+        </div>
 
-          <li class="catalog-list__item">
-            <div class="catalog-card">
-              <a class="catalog-card__inner" href="#" aria-label="Переход на страницу квартиры">
-                <div class="catalog-card__top">
-                  <p class="catalog-card__title">Квартира №19</p>
-                  <img class="catalog-card__pic" src="images/plan-19.jpg" width="220" height="205"
-                       alt="Планировка квартиры №19">
-                  <ul class="catalog-card__parameters">
-                    <li class="catalog-card__parameters-item">
-                      <div class="parameter-card parameter-card--yellow">
-                        <p class="parameter-card__title">Кол-во спален</p>
-                        <span class="parameter-card__value">2</span>
-                      </div>
-                    </li>
-                    <li class="catalog-card__parameters-item">
-                      <div class="parameter-card">
-                        <p class="parameter-card__title">Размер</p>
-                        <span class="parameter-card__value">M</span>
-                      </div>
-                    </li>
-                    <li class="catalog-card__parameters-item">
-                      <div class="parameter-card">
-                        <p class="parameter-card__title">Этаж</p>
-                        <span class="parameter-card__value">1</span>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-                <div class="catalog-card__footer">
-                  <div class="catalog-card__area">
-                    <p class="catalog-card__subtitle">Площадь</p>
-                    <p class="catalog-card__area-value"><span class="catalog-card__area-count">92</span> кв. м</p>
-                  </div>
-                  <div class="catalog-card__price-block">
-                    <p class="catalog-card__price">3 087 000 ₽/кв. м</p>
-                    <p class="catalog-card__price-total">372 350 000 ₽</p>
-                  </div>
-                </div>
-              </a>
-              <button class="catalog-card__btn-like" type="button" aria-label="Добавить в избранное">
-                <svg class="catalog-card__like-icon" width="24" height="22" aria-hidden="true">
-                  <use xlink:href="images/sprite.svg#icon-like"></use>
-                </svg>
-              </button>
-            </div>
-          </li>
+        <fieldset class="form-filter__currency">
+          <legend class="form-filter__legend">Валюта</legend>
 
-          <li class="catalog-list__item">
-            <div class="catalog-card">
-              <a class="catalog-card__inner" href="#" aria-label="Переход на страницу квартиры">
-                <div class="catalog-card__top">
-                  <p class="catalog-card__title">Квартира №24</p>
-                  <img class="catalog-card__pic" src="images/plan-24.jpg" width="220" height="205"
-                       alt="Планировка квартиры №24">
-                  <ul class="catalog-card__parameters">
-                    <li class="catalog-card__parameters-item">
-                      <div class="parameter-card parameter-card--blue">
-                        <p class="parameter-card__title">Кол-во спален</p>
-                        <span class="parameter-card__value">3</span>
-                      </div>
-                    </li>
-                    <li class="catalog-card__parameters-item">
-                      <div class="parameter-card">
-                        <p class="parameter-card__title">Размер</p>
-                        <span class="parameter-card__value">XXL</span>
-                      </div>
-                    </li>
-                    <li class="catalog-card__parameters-item">
-                      <div class="parameter-card">
-                        <p class="parameter-card__title">Этаж</p>
-                        <span class="parameter-card__value">5</span>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-                <div class="catalog-card__footer">
-                  <div class="catalog-card__area">
-                    <p class="catalog-card__subtitle">Площадь</p>
-                    <p class="catalog-card__area-value"><span class="catalog-card__area-count">169</span> кв. м</p>
-                  </div>
-                  <div class="catalog-card__price-block">
-                    <p class="catalog-card__price">3 087 000 ₽/кв. м</p>
-                    <p class="catalog-card__price-total">601 450 000 ₽</p>
-                  </div>
-                </div>
-              </a>
-              <button class="catalog-card__btn-like" type="button" aria-label="Добавить в избранное">
-                <svg class="catalog-card__like-icon" width="24" height="22" aria-hidden="true">
-                  <use xlink:href="images/sprite.svg#icon-like"></use>
-                </svg>
-              </button>
-            </div>
-          </li>
+          <ul class="custom-radio__list form-filter__currency-list">
+            <li class="custom-radio form-filter__currency-radio">
+              <input type="radio" id="ruble" name="currency" value="ruble" checked/>
+              <label for="ruble">₽</label>
+            </li>
 
-          <li class="catalog-list__item">
-            <div class="catalog-card">
-              <a class="catalog-card__inner" href="#" aria-label="Переход на страницу квартиры">
-                <div class="catalog-card__top">
-                  <p class="catalog-card__title">Квартира №23</p>
-                  <img class="catalog-card__pic" src="images/plan-23.jpg" width="220" height="205"
-                       alt="Планировка квартиры №23">
-                  <ul class="catalog-card__parameters">
-                    <li class="catalog-card__parameters-item">
-                      <div class="parameter-card parameter-card--violet">
-                        <p class="parameter-card__title">Кол-во спален</p>
-                        <span class="parameter-card__value">4</span>
-                      </div>
-                    </li>
-                    <li class="catalog-card__parameters-item">
-                      <div class="parameter-card">
-                        <p class="parameter-card__title">Размер</p>
-                        <span class="parameter-card__value">M</span>
-                      </div>
-                    </li>
-                    <li class="catalog-card__parameters-item">
-                      <div class="parameter-card">
-                        <p class="parameter-card__title">Этаж</p>
-                        <span class="parameter-card__value">4</span>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-                <div class="catalog-card__footer">
-                  <div class="catalog-card__area">
-                    <p class="catalog-card__subtitle">Площадь</p>
-                    <p class="catalog-card__area-value"><span class="catalog-card__area-count">232</span> кв. м</p>
-                  </div>
-                  <div class="catalog-card__price-block">
-                    <p class="catalog-card__price">2 560 000 ₽/кв. м</p>
-                    <p class="catalog-card__price-total">594 960 000 ₽</p>
-                  </div>
-                </div>
-              </a>
-              <button class="catalog-card__btn-like" type="button" aria-label="Добавить в избранное">
-                <svg class="catalog-card__like-icon" width="24" height="22" aria-hidden="true">
-                  <use xlink:href="images/sprite.svg#icon-like"></use>
-                </svg>
-              </button>
-            </div>
-          </li>
+            <li class="custom-radio form-filter__currency-radio">
+              <input type="radio" id="dollar" name="currency" value="dollar"/>
+              <label for="dollar">$</label>
+            </li>
 
-          <li class="catalog-list__item">
-            <div class="catalog-card">
-              <a class="catalog-card__inner" href="#" aria-label="Переход на страницу квартиры">
-                <div class="catalog-card__top">
-                  <p class="catalog-card__title">Квартира №31</p>
-                  <img class="catalog-card__pic" src="images/plan-31.jpg" width="220" height="205"
-                       alt="Планировка квартиры №31">
-                  <ul class="catalog-card__parameters">
-                    <li class="catalog-card__parameters-item">
-                      <div class="parameter-card parameter-card--blue">
-                        <p class="parameter-card__title">Кол-во спален</p>
-                        <span class="parameter-card__value">3</span>
-                      </div>
-                    </li>
-                    <li class="catalog-card__parameters-item">
-                      <div class="parameter-card">
-                        <p class="parameter-card__title">Размер</p>
-                        <span class="parameter-card__value">XXL</span>
-                      </div>
-                    </li>
-                    <li class="catalog-card__parameters-item">
-                      <div class="parameter-card">
-                        <p class="parameter-card__title">Этаж</p>
-                        <span class="parameter-card__value">5</span>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-                <div class="catalog-card__footer">
-                  <div class="catalog-card__area">
-                    <p class="catalog-card__subtitle">Площадь</p>
-                    <p class="catalog-card__area-value"><span class="catalog-card__area-count">279</span> кв. м</p>
-                  </div>
-                  <div class="catalog-card__price-block">
-                    <p class="catalog-card__price">3 022 000 ₽/кв. м</p>
-                    <p class="catalog-card__price-total">843 440 000 ₽</p>
-                  </div>
-                </div>
-              </a>
-              <button class="catalog-card__btn-like" type="button" aria-label="Добавить в избранное">
-                <svg class="catalog-card__like-icon" width="24" height="22" aria-hidden="true">
-                  <use xlink:href="images/sprite.svg#icon-like"></use>
-                </svg>
-              </button>
-            </div>
-          </li>
+            <li class="custom-radio form-filter__currency-radio">
+              <input type="radio" id="euro" name="currency" value="euro"/>
+              <label for="euro">&euro;</label>
+            </li>
+          </ul>
+        </fieldset>
 
-          <li class="catalog-list__item">
-            <div class="catalog-card">
-              <a class="catalog-card__inner" href="#" aria-label="Переход на страницу квартиры">
-                <div class="catalog-card__top">
-                  <p class="catalog-card__title">Квартира №5</p>
-                  <img class="catalog-card__pic" src="images/plan-5.jpg" width="220" height="205"
-                       alt="Планировка квартиры №5">
-                  <ul class="catalog-card__parameters">
-                    <li class="catalog-card__parameters-item">
-                      <div class="parameter-card parameter-card--blue">
-                        <p class="parameter-card__title">Кол-во спален</p>
-                        <span class="parameter-card__value">3</span>
+        <div class="custom-checkbox form-filter__blocked">
+          <input class="custom-checkbox__field visually-hidden" type="checkbox" id="isBlocked" name="isBlocked">
+          <label class="custom-checkbox__label" for="isBlocked">
+            <span class="custom-checkbox__heading">Стать постоянный клиентом</span>
+
+            <svg class="custom-checkbox__icon" width="6" height="6" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#checkbox-icon"></use>
+            </svg>
+          </label>
+        </div>
+
+        <fieldset class="custom-search form-filter__search">
+          <div class="custom-search">
+            <label class="custom-search__label" for="search-field">Номер квартиры</label>
+
+            <input class="custom-search__field" id="search-field" type="search"  aria-label="Поле поиска" name="search-field"
+                   placeholder="Введите номер" autocomplete="off">
+
+            <svg class="custom-search__icon" width="15" height="17" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#key-icon"></use>
+            </svg>
+          </div>
+        </fieldset>
+
+        <fieldset class="form-filter__rooms">
+          <legend class="form-filter__legend">Валюта</legend>
+
+          <ul class="custom-radio__list form-filter__rooms-list">
+            <li class="custom-radio">
+              <input type="radio" id="one-room" name="rooms" value="one-room"/>
+              <label for="one-room">1</label>
+            </li>
+
+            <li class="custom-radio">
+              <input type="radio" id="two-room" name="rooms" value="two-room"/>
+              <label for="two-room">2</label>
+            </li>
+
+            <li class="custom-radio">
+              <input type="radio" id="three-room" name="rooms" value="three-room" checked/>
+              <label for="three-room">3</label>
+            </li>
+
+            <li class="custom-radio">
+              <input type="radio" id="four-room" name="rooms" value="four-room"/>
+              <label for="four-room">4</label>
+            </li>
+
+            <li class="custom-radio">
+              <input type="radio" id="five-room" name="rooms" value="five-room"/>
+              <label for="five-room">5</label>
+            </li>
+          </ul>
+        </fieldset>
+      </form>
+
+      <section class="catalog">
+        <div class="container">
+          <h1 class="visually-hidden">Подбор квартиры по параметрам</h1>
+          <div class="catalog__inner">
+            <!-- Форма фильтрации -->
+
+            <!-- Список с карточками -->
+            <ul class="catalog-list">
+              <li class="catalog-list__item">
+                <div class="catalog-card">
+                  <a class="catalog-card__inner" href="#" aria-label="Переход на страницу квартиры">
+                    <div class="catalog-card__top">
+                      <p class="catalog-card__title">Квартира №18</p>
+                      <img class="catalog-card__pic" src="images/plan-18.jpg" width="220" height="205"
+                           alt="Планировка квартиры №18">
+                      <ul class="catalog-card__parameters">
+                        <li class="catalog-card__parameters-item">
+                          <div class="parameter-card parameter-card--green">
+                            <p class="parameter-card__title">Кол-во спален</p>
+                            <span class="parameter-card__value">1</span>
+                          </div>
+                        </li>
+                        <li class="catalog-card__parameters-item">
+                          <div class="parameter-card">
+                            <p class="parameter-card__title">Размер</p>
+                            <span class="parameter-card__value">S</span>
+                          </div>
+                        </li>
+                        <li class="catalog-card__parameters-item">
+                          <div class="parameter-card">
+                            <p class="parameter-card__title">Этаж</p>
+                            <span class="parameter-card__value">1</span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="catalog-card__footer">
+                      <div class="catalog-card__area">
+                        <p class="catalog-card__subtitle">Площадь</p>
+                        <p class="catalog-card__area-value"><span class="catalog-card__area-count">77</span> кв. м</p>
                       </div>
-                    </li>
-                    <li class="catalog-card__parameters-item">
-                      <div class="parameter-card">
-                        <p class="parameter-card__title">Размер</p>
-                        <span class="parameter-card__value">XL</span>
+                      <div class="catalog-card__price-block">
+                        <p class="catalog-card__price">3 087 000 ₽/кв. м</p>
+                        <p class="catalog-card__price-total">236 480 000 ₽</p>
                       </div>
-                    </li>
-                    <li class="catalog-card__parameters-item">
-                      <div class="parameter-card">
-                        <p class="parameter-card__title">Этаж</p>
-                        <span class="parameter-card__value">1</span>
-                      </div>
-                    </li>
-                  </ul>
+                    </div>
+                  </a>
+                  <button class="catalog-card__btn-like" type="button" aria-label="Добавить в избранное">
+                    <svg class="catalog-card__like-icon" width="24" height="22" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-like"></use>
+                    </svg>
+                  </button>
                 </div>
-                <div class="catalog-card__footer">
-                  <div class="catalog-card__area">
-                    <p class="catalog-card__subtitle">Площадь</p>
-                    <p class="catalog-card__area-value"><span class="catalog-card__area-count">497</span> кв. м</p>
-                  </div>
-                  <div class="catalog-card__price-block">
-                    <p class="catalog-card__price">1 883 000 ₽/кв. м</p>
-                    <p class="catalog-card__price-total">910 380 000 ₽</p>
-                  </div>
+              </li>
+
+              <li class="catalog-list__item">
+                <div class="catalog-card">
+                  <a class="catalog-card__inner" href="#" aria-label="Переход на страницу квартиры">
+                    <div class="catalog-card__top">
+                      <p class="catalog-card__title">Квартира №19</p>
+                      <img class="catalog-card__pic" src="images/plan-19.jpg" width="220" height="205"
+                           alt="Планировка квартиры №19">
+                      <ul class="catalog-card__parameters">
+                        <li class="catalog-card__parameters-item">
+                          <div class="parameter-card parameter-card--yellow">
+                            <p class="parameter-card__title">Кол-во спален</p>
+                            <span class="parameter-card__value">2</span>
+                          </div>
+                        </li>
+                        <li class="catalog-card__parameters-item">
+                          <div class="parameter-card">
+                            <p class="parameter-card__title">Размер</p>
+                            <span class="parameter-card__value">M</span>
+                          </div>
+                        </li>
+                        <li class="catalog-card__parameters-item">
+                          <div class="parameter-card">
+                            <p class="parameter-card__title">Этаж</p>
+                            <span class="parameter-card__value">1</span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="catalog-card__footer">
+                      <div class="catalog-card__area">
+                        <p class="catalog-card__subtitle">Площадь</p>
+                        <p class="catalog-card__area-value"><span class="catalog-card__area-count">92</span> кв. м</p>
+                      </div>
+                      <div class="catalog-card__price-block">
+                        <p class="catalog-card__price">3 087 000 ₽/кв. м</p>
+                        <p class="catalog-card__price-total">372 350 000 ₽</p>
+                      </div>
+                    </div>
+                  </a>
+                  <button class="catalog-card__btn-like" type="button" aria-label="Добавить в избранное">
+                    <svg class="catalog-card__like-icon" width="24" height="22" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-like"></use>
+                    </svg>
+                  </button>
                 </div>
-              </a>
-              <button class="catalog-card__btn-like" type="button" aria-label="Добавить в избранное">
-                <svg class="catalog-card__like-icon" width="24" height="22" aria-hidden="true">
-                  <use xlink:href="images/sprite.svg#icon-like"></use>
-                </svg>
-              </button>
-            </div>
-          </li>
-        </ul>
-      </div>
+              </li>
+
+              <li class="catalog-list__item">
+                <div class="catalog-card">
+                  <a class="catalog-card__inner" href="#" aria-label="Переход на страницу квартиры">
+                    <div class="catalog-card__top">
+                      <p class="catalog-card__title">Квартира №24</p>
+                      <img class="catalog-card__pic" src="images/plan-24.jpg" width="220" height="205"
+                           alt="Планировка квартиры №24">
+                      <ul class="catalog-card__parameters">
+                        <li class="catalog-card__parameters-item">
+                          <div class="parameter-card parameter-card--blue">
+                            <p class="parameter-card__title">Кол-во спален</p>
+                            <span class="parameter-card__value">3</span>
+                          </div>
+                        </li>
+                        <li class="catalog-card__parameters-item">
+                          <div class="parameter-card">
+                            <p class="parameter-card__title">Размер</p>
+                            <span class="parameter-card__value">XXL</span>
+                          </div>
+                        </li>
+                        <li class="catalog-card__parameters-item">
+                          <div class="parameter-card">
+                            <p class="parameter-card__title">Этаж</p>
+                            <span class="parameter-card__value">5</span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="catalog-card__footer">
+                      <div class="catalog-card__area">
+                        <p class="catalog-card__subtitle">Площадь</p>
+                        <p class="catalog-card__area-value"><span class="catalog-card__area-count">169</span> кв. м</p>
+                      </div>
+                      <div class="catalog-card__price-block">
+                        <p class="catalog-card__price">3 087 000 ₽/кв. м</p>
+                        <p class="catalog-card__price-total">601 450 000 ₽</p>
+                      </div>
+                    </div>
+                  </a>
+                  <button class="catalog-card__btn-like" type="button" aria-label="Добавить в избранное">
+                    <svg class="catalog-card__like-icon" width="24" height="22" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-like"></use>
+                    </svg>
+                  </button>
+                </div>
+              </li>
+
+              <li class="catalog-list__item">
+                <div class="catalog-card">
+                  <a class="catalog-card__inner" href="#" aria-label="Переход на страницу квартиры">
+                    <div class="catalog-card__top">
+                      <p class="catalog-card__title">Квартира №23</p>
+                      <img class="catalog-card__pic" src="images/plan-23.jpg" width="220" height="205"
+                           alt="Планировка квартиры №23">
+                      <ul class="catalog-card__parameters">
+                        <li class="catalog-card__parameters-item">
+                          <div class="parameter-card parameter-card--violet">
+                            <p class="parameter-card__title">Кол-во спален</p>
+                            <span class="parameter-card__value">4</span>
+                          </div>
+                        </li>
+                        <li class="catalog-card__parameters-item">
+                          <div class="parameter-card">
+                            <p class="parameter-card__title">Размер</p>
+                            <span class="parameter-card__value">M</span>
+                          </div>
+                        </li>
+                        <li class="catalog-card__parameters-item">
+                          <div class="parameter-card">
+                            <p class="parameter-card__title">Этаж</p>
+                            <span class="parameter-card__value">4</span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="catalog-card__footer">
+                      <div class="catalog-card__area">
+                        <p class="catalog-card__subtitle">Площадь</p>
+                        <p class="catalog-card__area-value"><span class="catalog-card__area-count">232</span> кв. м</p>
+                      </div>
+                      <div class="catalog-card__price-block">
+                        <p class="catalog-card__price">2 560 000 ₽/кв. м</p>
+                        <p class="catalog-card__price-total">594 960 000 ₽</p>
+                      </div>
+                    </div>
+                  </a>
+                  <button class="catalog-card__btn-like" type="button" aria-label="Добавить в избранное">
+                    <svg class="catalog-card__like-icon" width="24" height="22" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-like"></use>
+                    </svg>
+                  </button>
+                </div>
+              </li>
+
+              <li class="catalog-list__item">
+                <div class="catalog-card">
+                  <a class="catalog-card__inner" href="#" aria-label="Переход на страницу квартиры">
+                    <div class="catalog-card__top">
+                      <p class="catalog-card__title">Квартира №31</p>
+                      <img class="catalog-card__pic" src="images/plan-31.jpg" width="220" height="205"
+                           alt="Планировка квартиры №31">
+                      <ul class="catalog-card__parameters">
+                        <li class="catalog-card__parameters-item">
+                          <div class="parameter-card parameter-card--blue">
+                            <p class="parameter-card__title">Кол-во спален</p>
+                            <span class="parameter-card__value">3</span>
+                          </div>
+                        </li>
+                        <li class="catalog-card__parameters-item">
+                          <div class="parameter-card">
+                            <p class="parameter-card__title">Размер</p>
+                            <span class="parameter-card__value">XXL</span>
+                          </div>
+                        </li>
+                        <li class="catalog-card__parameters-item">
+                          <div class="parameter-card">
+                            <p class="parameter-card__title">Этаж</p>
+                            <span class="parameter-card__value">5</span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="catalog-card__footer">
+                      <div class="catalog-card__area">
+                        <p class="catalog-card__subtitle">Площадь</p>
+                        <p class="catalog-card__area-value"><span class="catalog-card__area-count">279</span> кв. м</p>
+                      </div>
+                      <div class="catalog-card__price-block">
+                        <p class="catalog-card__price">3 022 000 ₽/кв. м</p>
+                        <p class="catalog-card__price-total">843 440 000 ₽</p>
+                      </div>
+                    </div>
+                  </a>
+                  <button class="catalog-card__btn-like" type="button" aria-label="Добавить в избранное">
+                    <svg class="catalog-card__like-icon" width="24" height="22" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-like"></use>
+                    </svg>
+                  </button>
+                </div>
+              </li>
+
+              <li class="catalog-list__item">
+                <div class="catalog-card">
+                  <a class="catalog-card__inner" href="#" aria-label="Переход на страницу квартиры">
+                    <div class="catalog-card__top">
+                      <p class="catalog-card__title">Квартира №5</p>
+                      <img class="catalog-card__pic" src="images/plan-5.jpg" width="220" height="205"
+                           alt="Планировка квартиры №5">
+                      <ul class="catalog-card__parameters">
+                        <li class="catalog-card__parameters-item">
+                          <div class="parameter-card parameter-card--blue">
+                            <p class="parameter-card__title">Кол-во спален</p>
+                            <span class="parameter-card__value">3</span>
+                          </div>
+                        </li>
+                        <li class="catalog-card__parameters-item">
+                          <div class="parameter-card">
+                            <p class="parameter-card__title">Размер</p>
+                            <span class="parameter-card__value">XL</span>
+                          </div>
+                        </li>
+                        <li class="catalog-card__parameters-item">
+                          <div class="parameter-card">
+                            <p class="parameter-card__title">Этаж</p>
+                            <span class="parameter-card__value">1</span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="catalog-card__footer">
+                      <div class="catalog-card__area">
+                        <p class="catalog-card__subtitle">Площадь</p>
+                        <p class="catalog-card__area-value"><span class="catalog-card__area-count">497</span> кв. м</p>
+                      </div>
+                      <div class="catalog-card__price-block">
+                        <p class="catalog-card__price">1 883 000 ₽/кв. м</p>
+                        <p class="catalog-card__price-total">910 380 000 ₽</p>
+                      </div>
+                    </div>
+                  </a>
+                  <button class="catalog-card__btn-like" type="button" aria-label="Добавить в избранное">
+                    <svg class="catalog-card__like-icon" width="24" height="22" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-like"></use>
+                    </svg>
+                  </button>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </div>
-  </section>
-
+  </div>
 </main>
-
 </body>
-
 </html>

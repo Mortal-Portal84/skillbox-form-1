@@ -1,0 +1,47 @@
+.custom-radio__list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  list-style: none;
+  border: solid 1px #AD8361;
+}
+
+.custom-radio__list .custom-radio:not(:last-child) {
+  border-right: solid 1px #AD8361;
+}
+
+.custom-radio {
+  flex-wrap: nowrap;
+  flex: 1;
+}
+
+.custom-radio input[type="radio"] {
+  display: none;
+}
+
+.custom-radio label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 20px;
+  cursor: pointer;
+  color: #AD8361;
+  background: #fff;
+  border-right: 1px solid #AD8361;
+  user-select: none;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.custom-radio label:last-of-type {
+  border-right: none;
+}
+
+.custom-radio input[type="radio"]:checked + label {
+  background: #AD8361;
+  color: #fff;
+}
