@@ -7,13 +7,12 @@
 
 /* Blocks */
 @import "blocks/header.css";
-@import "blocks/content.css";
 @import "blocks/button.css";
 @import "blocks/form-filter.css";
 @import "blocks/custom-radio.css";
 @import "blocks/custom-checkbox.css";
 @import "blocks/custom-input.css";
 @import "blocks/tooltip.css";
-@import "blocks/catalog-list.css";
+@import "blocks/catalog.css";
 @import "blocks/catalog-card.css";
 @import "blocks/parameter-card.css";

@@ -34,6 +34,10 @@
   color: #AD8361;
 }
 
+.form-filter__input-group {
+  position: relative;
+}
+
 .form-filter__currency {
   display: flex;
   padding: 0;
@@ -70,7 +74,6 @@
 }
 
 .form-filter__house-list {
-  display: flex;
   flex-wrap: wrap;
 }
 
@@ -80,6 +83,11 @@
 
 .form-filter__house-list .form-filter__house-type:nth-child(2) label {
   border-right: 1px solid #AD8361;
+}
+
+.form-filter__list-item {
+  flex-wrap: nowrap;
+  flex: 1;
 }
 
 .form-filter__house-types {
