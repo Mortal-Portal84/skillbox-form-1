@@ -60,6 +60,10 @@
   list-style: none;
 }
 
+.form-filter__currency-radio {
+  width: 100%;
+}
+
 .form-filter__radio-list li:last-child label {
   border-right: solid 1px #AD8361;
 }
